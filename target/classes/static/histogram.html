@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="histogram.css">
+    <script src="./script.js" defer></script>
+
+</head>
+<body>
+<header>
+    <h2>Histogram Generator</h2>
+</header>
+<main>
+
+   
+        <div class= "left-column">
+            <div class = "header">
+                <h2 class= "top-left-text">
+                    Lower Bounds
+                </h2>
+            </div>
+            <div class="content-box">
+                <div class="letter-box">
+                    <span class="letter">Max</span>
+                </div>
+                <input 
+                type="number" 
+                placeholder="EX: 100" 
+                class = rectangle-input
+                min = "0"
+                max = "100"
+                name = "Max"
+                >
+            </div>
+            <div class="content-box">
+                <div class="letter-box">
+                    <span class="letter">A+</span>
+                </div>
+                <input type="number" placeholder="EX: 95" class="rectangle-input" min="0" max="100" name="A+">
+            </div>
+            <div class="content-box">
+                <div class="letter-box">
+                    <span class="letter">A</span>
+                </div>
+                <input type="number" placeholder="EX: 90" class="rectangle-input" min="0" max="100" name="A">
+            </div>
+            <div class="content-box">
+                <div class="letter-box">
+                    <span class="letter">A-</span>
+                </div>
+                <input type="number" placeholder="EX: 85" class="rectangle-input" min="0" max="100" name="A-">
+            </div>
+            <div class="content-box">
+                <div class="letter-box">
+                    <span class="letter">B+</span>
+                </div>
+                <input type="number" placeholder="EX: 80" class="rectangle-input" min="0" max="100" name="B+">
+            </div>
+            <div class="content-box">
+                <div class="letter-box">
+                    <span class="letter">B</span>
+                </div>
+                <input type="number" placeholder="EX: 75" class="rectangle-input" min="0" max="100" name="B">
+            </div>
+            <div class="content-box">
+                <div class="letter-box">
+                    <span class="letter">B-</span>
+                </div>
+                <input type="number" placeholder="EX: 70" class="rectangle-input" min="0" max="100" name="B-">
+            </div>
+            <div class="content-box">
+                <div class="letter-box">
+                    <span class="letter">C+</span>
+                </div>
+                <input type="number" placeholder="EX: 65" class="rectangle-input" min="0" max="100" name="C+">
+            </div>
+            <div class="content-box">
+                <div class="letter-box">
+                    <span class="letter">C</span>
+                </div>
+                <input type="number" placeholder="EX: 60" class="rectangle-input" min="0" max="100" name="C">
+            </div>
+            <div class="content-box">
+                <div class="letter-box">
+                    <span class="letter">C-</span>
+                </div>
+                <input type="number" placeholder="EX: 55" class="rectangle-input" min="0" max="100" name="C-">
+            </div>
+            <div class="content-box">
+                <div class="letter-box">
+                    <span class="letter">D</span>
+                </div>
+                <input type="number" placeholder="EX: 50" class="rectangle-input" min="0" max="100" name="D">
+            </div>
+            <div class="content-box">
+                <div class="letter-box">
+                    <span class="letter">F</span>
+                </div>
+                <input type="number" placeholder="EX: 45" class="rectangle-input" min="0" max="100" name="F">
+            </div>
+
+        </div>
+        <div class = "right-column">
+            
+            <section class = "right-box-70">
+                <div class = "header">
+                    <h2 class = top-left-text>
+                        Histogram
+                    </h2>
+                </div>
+                
+                        <td>A+</td>
+                            <div class="hist">
+                                <div class="progress-bar Aplus">
+                                    <span>0</span>
+                                </div>
+                            </div>
+                       
+                        <td>A</td>
+                            <div class="hist">
+                                <div class="progress-bar A">
+                                    <span>0</span>
+                                </div>
+                            </div>
+                        
+                        <td>A-</td>
+                            <div class="hist">
+                                <div class="progress-bar Aminus">
+                                    <span>0</span>
+                                </div>
+                            </div>
+                        
+                        
+                        <td>B+</td>
+                            <div class="hist">
+                                <div class="progress-bar Bplus">
+                                    <span>0</span>
+                                </div>
+                            </div>
+                        
+                        <td>B</td>
+                            <div class="hist">
+                                <div class="progress-bar B">
+                                    <span>0</span>
+                                </div>
+                            </div>
+                        
+                        <td>B-</td>
+                            <div class="hist">
+                                <div class="progress-bar Bminus">
+                                    <span>0</span>
+                                </div>
+                            </div>
+                        
+                        <td>C+</td>
+                            <div class="hist">
+                                <div class="progress-bar Cplus">
+                                    <span>0</span>
+                                </div>
+                            </div>
+                        
+                        <td>C</td>
+                            <div class="hist">
+                                <div class="progress-bar C">
+                                    <span>0</span>
+                                </div>
+                            </div>
+                        
+                        <td>C-</td>
+                            <div class="hist">
+                                <div class="progress-bar Cminus">
+                                    <span>0</span>
+                                </div>
+                            </div>
+                        
+                        <td>D</td>
+                            <div class="hist">
+                                <div class="progress-bar D">
+                                    <span>0</span>
+                                </div>
+                            </div>
+                       
+                        <td>F</td>
+                            <div class="hist">
+                                <div class="progress-bar F">
+                                    <span>0</span>
+                                </div>
+                            </div>
+                        
+            </section>
+            <section class = "right-box-30">
+                <div class = "input-box">
+                    <label>New Grade:</label>
+                    <input type="number" min="0" max="100" name="newGrade" />
+                    <br/>
+                    <button type = "submit" class = "rounded-button">Submit New Grade</button>
+
+                </div>
+            </section>
+        </div>
+
+    
+
+</main>
+</body>
+</html>

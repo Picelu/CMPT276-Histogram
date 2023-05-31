@@ -1,0 +1,229 @@
+body {
+  padding: 0px, 20px, 0px, 20px;
+  margin: 0px, 10px, 0px, 10px;
+  height: 100%;
+}
+
+main {
+  display: flex;
+}
+
+header {
+  margin-bottom: 5px;
+}
+
+.left-column {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(185, 199, 204);
+  padding: auto;
+  margin-right: 20px; /* Add a margin between the columns */
+}
+
+.header {
+  display: flex;
+  margin-bottom: 20px;
+  margin-left: 5px;
+}
+
+.top-left-text {
+  color: rgb(182, 40, 40);
+  font-weight: normal;
+  font-size: normal;
+  margin-top: 0;
+}
+
+.right-column {
+  width: 50%;
+  flex: 1;
+  display: flex;
+  background-color: white;
+  padding: auto;
+  flex-direction: column;
+}
+
+.right-box-70 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(185, 199, 204);
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.right-box-30 {
+  flex: 1;
+  display: flex;
+  background-color: rgb(185, 199, 204);
+  width: auto;
+  padding: 10px;
+  height: 30%;
+}
+.content-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.letter-box {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(185, 199, 204);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 140px;
+  margin-left: 50px;
+}
+.rectangle-input {
+  width: 15%;
+  height: 30px;
+  border: 1px solid lightblue;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+.table {
+  width: 90%;
+  table-layout: fixed;
+  height: auto;
+}
+
+.hist {
+  background: #959595;
+  width: auto;
+  height: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 12px;
+}
+
+.progress-bar {
+  height: 10px;
+  border-radius: 5px;
+  width: 0;
+  transition: width 0.5s ease;
+  animation: progress-animation 1s linear forwards;
+}
+
+.progress-bar span {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  color: rgb(185, 199, 204);
+  float: right;
+  margin-top: -10px;
+  margin-right: -20px;
+  margin-bottom: 5px;
+  margin-left: auto;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  background: #ededed;
+  border: 1px solid #ccc;
+  padding: 10px 30px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 25px;
+}
+
+button:active {
+  background: #e5e5e5;
+  -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+  -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+  box-shadow: inset 0px 0px 5px #c1c1c1;
+  outline: none;
+}
+.progress-bar.Aplus {
+  background: #e91e63;
+  animation: progress-animation 1s linear forwards;
+}
+
+.progress-bar.A {
+  background: #cddc39;
+  animation: progress-animation 1s linear forwards;
+}
+.progress-bar.Aminus {
+  background: #00bcd4;
+  animation: progress-animation 1s linear forwards;
+}
+.progress-bar.Bplus {
+  background: #46a539;
+  animation: progress-animation 1s linear forwards;
+}
+.progress-bar.B {
+  background: #b25eeb;
+  animation: progress-animation 1s linear forwards;
+}
+.progress-bar.Bminus {
+  background: #df7cda;
+  animation: progress-animation 1s linear forwards;
+}
+.progress-bar.Cplus {
+  background: #e47ca4;
+  animation: progress-animation 1s linear forwards;
+}
+.progress-bar.C {
+  background: #f19f5b;
+  animation: progress-animation 1s linear forwards;
+}
+.progress-bar.Cminus {
+  background: rgb(226, 201, 89);
+  animation: progress-animation 1s linear forwards;
+}
+.progress-bar.D {
+  background: #47e9d3;
+  animation: progress-animation 1s linear forwards;
+}
+.progress-bar.F {
+  background: #5771e4;
+  animation: progress-animation 1s linear forwards;
+}
+
+.progress-bar.Aplus span {
+  border: 1px solid #e91e63;
+}
+.progress-bar.A span {
+  border: 1px solid #cddc39;
+}
+.progress-bar.Aminus span {
+  border: 1px solid #00bcd4;
+}
+.progress-bar.Bplus span {
+  border: 1px solid #46a539;
+}
+.progress-bar.B span {
+  border: 1px solid #b25eeb;
+}
+.progress-bar.Bminus span {
+  border: 1px solid #df7cda;
+}
+.progress-bar.Cplus span {
+  border: 1px solid #e47ca4;
+}
+.progress-bar.C span {
+  border: 1px solid #f19f5b;
+}
+.progress-bar.Cminus span {
+  border: 1px solid rgb(226, 201, 89);
+}
+.progress-bar.D span {
+  border: 1px solid #47e9d3;
+}
+.progress-bar.F span {
+  border: 1px solid #5771e4;
+}
+
+@keyframes progress-animation {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: var(--percentage); /* Use a CSS variable for dynamic width */
+  }
+}
