@@ -45,10 +45,11 @@ let newGrades = {
 let len = grades.length;
 
 let update = () => {
+  // init all of the elements in the newGrades obj
   for (let grade in newGrades) {
     newGrades[grade] = 0;
   }
-
+  // Logic for updating each grade count in newGrades
   grades.forEach((x) => {
     if (x === gradeBoundaries["Max"]) {
       newGrades["A+"]++;
@@ -68,6 +69,7 @@ let update = () => {
     }
   });
 
+  // Updating the progress bar based on the newGrades that were updated
   for (let grade in newGrades) {
     let count = newGrades[grade];
     let percentage = (count / len) * 100;
@@ -80,6 +82,7 @@ let update = () => {
   }
 };
 
+// function to not allow inputs of newGrades unless all of the gradeBoundaries obj's are filled
 let boundsEmpty = () => {
   for (let i of order) {
     if (gradeBoundaries[i] === undefined) {
